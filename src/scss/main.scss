@@ -1,0 +1,16 @@
+@import './_fonts.scss';
+@import './mixins/_mixins.scss';
+@import './variables/_variables.scss';
+@import './components/_components.scss';
+@import './elements/_elements.scss';
+@import './layout/_layout.scss';
+
+
+body {
+	background-color: $background;
+	overflow-x: hidden;
+}
+
+* {
+	box-sizing: border-box;
+}

@@ -1,0 +1,71 @@
+h1, h2, h3, h4 {
+	font-family: 'Slabo 27px', serif;
+	margin: 5px 0;
+	color: darkslategray;
+}
+
+h3 {
+	text-align: center;
+	font-size: 1.5em;
+	font-weight: 700;
+}
+
+a {
+	text-decoration: none;
+	font-weight: 700;
+	&:hover {
+			@include hoverAnimation(background-color, white, 0.5s)
+			color: $invert-main-color;
+		}
+}
+
+//lists
+ul {
+	list-style-type: circle;
+	padding-left: 15px;
+}
+
+.wrapper a {
+	color: $main-color;
+	&:visited {
+		color: lightgreen;
+	}
+	&:hover {
+		@include hoverAnimation(color, $invert-main-color, 0.5s)
+	}
+}
+
+//social icons
+.fab, .fas {
+	font-size: 50px;
+	color: $main-color;
+	margin: 0 5px;
+	&:hover {
+			@include hoverAnimation(color, lightgreen, 0.5s)
+		}
+}
+
+.paper-text {
+	font-family: 'Roboto Slab', serif;
+	font-size: 16px;
+	font-weight: 400;
+	text-indent: 25px;
+	letter-spacing: 1px;
+	text-align: center;
+}
+
+//three dots
+/*Huge thanks to @tobiasahlin at http://tobiasahlin.com/spinkit/ */
+.dots {
+  margin: 5px auto;
+  width: 70px;
+  text-align: center;
+}
+
+.dots > div {
+  width: 18px;
+  height: 18px;
+  background-color: $lightsteelblue;
+  border-radius: 100%;
+  display: inline-block;
+}

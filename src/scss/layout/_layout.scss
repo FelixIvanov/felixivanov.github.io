@@ -1,0 +1,40 @@
+.section {
+	display: flex;
+	flex-wrap: wrap;
+	
+	justify-content: center;
+}
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	max-width: 850px;
+	min-width: 450px;
+	background-color: white;
+	margin: 0 auto;
+	padding: 15px;
+	background-color: $background;
+}
+
+.rows {
+	display: flex;
+	flex-direction: row;
+}
+
+//avatar image layout
+.avatar {
+	display: flex;
+    justify-content: center;
+	overflow: hidden;
+    object-fit: cover;
+}
+.avatar img {
+    flex: none;
+}
+
+.padding-left {
+	padding-left: 16px;
+}
+
+.small-caps {
+	font-variant: small-caps;
+}

@@ -1,0 +1,4 @@
+@mixin hoverAnimation($property, $color, $time) {
+	transition: $time;
+	#{$property}: $color;
+}
