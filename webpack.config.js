@@ -9,7 +9,7 @@ const CleanWebpackPlugin = require('clean-webpack-plugin');
 module.exports = {
   entry: { main: './src/index.js' },
   output: {
-    path: path.resolve(__dirname),
+    path: path.resolve(__dirname, 'dist'),
     filename: './js/[name].[chunkhash].js'
   },
   module: {
@@ -37,6 +37,7 @@ module.exports = {
   //   port: 3000,
   //   hostname: 'localhost'}),
   new CleanWebpackPlugin('dist', {} ),
+  new CleanWebpackPlugin('index.html', {} ),
     // new ExtractTextPlugin({filename: 'style.[hash].css', disable: false, allChunks: true}),
     new MiniCssExtractPlugin({
       template: './src/style.[contenthash].css',
@@ -46,7 +47,7 @@ module.exports = {
       inject: false,
       hash: true,
       template: './src/index.html',
-      filename: 'index.html'
+      filename: '../index.html'
     }),
     new WebpackMd5Hash()
   ]

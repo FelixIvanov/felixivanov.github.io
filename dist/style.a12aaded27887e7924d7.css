@@ -411,6 +411,9 @@ h3 {
   font-size: 1.5em;
   font-weight: 700; }
 
+h4 {
+  font-size: 1.25em; }
+
 a {
   text-decoration: none;
   font-weight: 700; }
@@ -432,7 +435,7 @@ ul {
     color: #ce3a46; }
 
 .fab, .fas {
-  font-size: 50px;
+  font-size: 3em;
   color: #3acec2;
   margin: 0 5px; }
   .fab:hover, .fas:hover {
@@ -441,7 +444,7 @@ ul {
 
 .paper-text {
   font-family: 'Roboto Slab', serif;
-  font-size: 16px;
+  font-size: 1em;
   font-weight: 400;
   text-indent: 25px;
   letter-spacing: 1px;
